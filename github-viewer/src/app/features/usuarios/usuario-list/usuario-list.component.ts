@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Usuario } from '../usuario';
 import { UsuarioService } from '../usuario.service';
 import { CommonModule } from '@angular/common';
@@ -14,12 +14,15 @@ export class UsuarioListComponent implements OnInit {
   usuarios: Array<Usuario> = [];
 
 
-  constructor(private usuarioService: UsuarioService) { }
+  constructor(private usuarioService: UsuarioService,
+    private cdr: ChangeDetectorRef
+  ) { }
 
   getUsuarios(): void {
     this.usuarioService.getUsuarios().subscribe((data: Usuario[]) => {
       console.log(data);
       this.usuarios = data;
+      this.cdr.detectChanges();
     });
   }
 

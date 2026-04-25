@@ -1,0 +1,85 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #dfe6ee;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 0 0 8px;
+  color: #111;
+}
+
+.header p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 18px;
+}
+
+.length {
+  font-weight: bold;
+  color: #111;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.user-card {
+  background: linear-gradient(145deg, #ffffff, #edf2f7);
+  border: 1px solid #cfd8e3;
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+  border: 3px solid #ffffff;
+}
+
+.user-card h3 {
+  margin: 8px 0;
+  font-size: 22px;
+  color: #111;
+}
+
+.username {
+  margin: 0 0 10px;
+  color: #6b7280;
+}
+
+.role {
+  display: inline-block;
+  background: #111827;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
