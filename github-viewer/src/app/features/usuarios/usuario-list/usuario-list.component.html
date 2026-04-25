@@ -1,3 +1,26 @@
-<p>
-  usuario-list works!
-</p>
+<div class="container">
+  <h1>Usuarios GitHub</h1>
+  <p class="subtitle">Explora perfiles de usuarios</p>
+
+  <div class="users-grid">
+
+    <div class="user-card" *ngFor="let usuario of usuarios">
+
+      <img
+        [src]="usuario.avatarUrl"
+        [alt]="usuario.name"
+        class="avatar"
+      />
+
+      <h3>{{ usuario.name }}</h3>
+
+      <p>@{{ usuario.username }}</p>
+
+      <span>{{ usuario.role }}</span>
+
+      <small>{{ usuario.location }}</small>
+
+    </div>
+
+  </div>
+</div>

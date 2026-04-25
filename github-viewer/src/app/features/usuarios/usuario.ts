@@ -1,2 +1,10 @@
-export class Usuario {
+export interface Usuario {
+  id: number;
+  username: string;
+  name: string;
+  email: string;
+  avatarUrl: string;
+  role: string;
+  location: string;
+  repoIds: number[];
 }
