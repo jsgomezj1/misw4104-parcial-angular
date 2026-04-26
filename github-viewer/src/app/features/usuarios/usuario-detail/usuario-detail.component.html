@@ -1,3 +1,20 @@
-<p>
-  usuario-detail works!
-</p>
+<div class="detail-card">
+
+  <img
+    [src]="usuarioDetail.avatarUrl"
+    [alt]="usuarioDetail.name"
+    class="detail-avatar"
+  />
+
+  <div class="detail-info">
+
+    <h2>{{ usuarioDetail.name }}</h2>
+
+    <p><strong>User:</strong> @{{ usuarioDetail.username }}</p>
+    <p><strong>Email:</strong> {{ usuarioDetail.email }}</p>
+    <p><strong>Location:</strong> {{ usuarioDetail.location }}</p>
+    <p><strong>Role:</strong> {{ usuarioDetail.role }}</p>
+
+  </div>
+
+</div>

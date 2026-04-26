@@ -4,7 +4,7 @@ import { UsuarioListComponent } from './features/usuarios/usuario-list/usuario-l
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,UsuarioListComponent],
+  imports: [UsuarioListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

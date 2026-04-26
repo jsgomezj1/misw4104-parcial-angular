@@ -68,6 +68,10 @@
   font-size: 22px;
   color: #111;
 }
+.user-card:hover{
+  transform: translateY(-4px);
+  transition: .2s;
+}
 
 .username {
   margin: 0 0 10px;
@@ -82,4 +86,15 @@
   border-radius: 999px;
   font-size: 12px;
   font-weight: bold;
+}
+
+.right-side {
+  background: linear-gradient(160deg, #c8d4e2, #b7c6d8);
+  border: 1px solid #9fb1c6;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.10);
+  position: sticky;
+  top: 0;
+  height: fit-content;
 }

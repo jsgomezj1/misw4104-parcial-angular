@@ -1,27 +1,45 @@
 <div class="container">
-  <h1>Usuarios GitHub</h1>
-  <p class="subtitle">Explora perfiles de usuarios</p>
 
-  <div class="users-grid">
+  <div class="page-layout">
 
-    <div class="user-card" *ngFor="let usuario of usuarios">
+    <div class="left-side">
 
-      <img
-        [src]="usuario.avatarUrl"
-        [alt]="usuario.name"
-        class="avatar"
-      />
+      <h1>Usuarios GitHub</h1>
+      <p class="subtitle">Explora perfiles de usuarios</p>
 
-      <h3>{{ usuario.name }}</h3>
+      <div class="right-side" *ngIf="selected">
 
-  
-      <p>@{{ usuario.username }}</p>
-
-      <span>{{ usuario.role }}</span>
-
-      <small>{{ usuario.location }}</small>
+      <app-usuario-detail
+        [usuarioDetail]="selectedUsuario">
+      </app-usuario-detail>
 
     </div>
 
+      <div class="users-grid">
+
+        <div
+          class="user-card"
+          *ngFor="let usuario of usuarios"
+          (click)="onSelected(usuario)">
+
+          <img
+            [src]="usuario.avatarUrl"
+            [alt]="usuario.name"
+            class="avatar"
+          />
+
+          <h3>{{ usuario.name }}</h3>
+
+          <p>@{{ usuario.username }}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
   </div>
+
 </div>
