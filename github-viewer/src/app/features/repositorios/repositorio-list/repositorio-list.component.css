@@ -1,0 +1,40 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #dfe6ee;
+}
+
+.repo-container {
+  padding: 30px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.repo-card {
+  background: linear-gradient(145deg, #ffffff, #edf2f7);
+  border: 1px solid #cfd8e3;
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  transition: 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0,0,0,.12);
+}
+
+.repo-card h3 {
+  margin: 0 0 10px;
+}
+
+.repo-card p {
+  margin: 0;
+  color: #6b7280;
+}

@@ -1,5 +1,18 @@
-<h1>Repositorios</h1>
-<div *ngFor="let repo of repositorios">
-  {{ repo.name }} - {{ repo.language }}
-  
+<div class="repo-container">
+
+  <h1>Repositorios</h1>
+  <p class="subtitle">Explora proyectos disponibles</p>
+
+  <div class="repo-grid">
+
+    <div class="repo-card" *ngFor="let repo of repositorios">
+
+      <h3>{{ repo.name }}</h3>
+
+      <p>{{ repo.language }}</p>
+
+    </div>
+
+  </div>
+
 </div>
