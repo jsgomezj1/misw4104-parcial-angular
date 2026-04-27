@@ -1,0 +1,26 @@
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-tabs button {
+  background: #374151;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-tabs button:hover {
+  background: #4b5563;
+}
