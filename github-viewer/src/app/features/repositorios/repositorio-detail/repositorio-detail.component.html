@@ -1,3 +1,18 @@
-<p>
-  repositorio-detail works!
-</p>
+<div class="top-bar">
+  <button class="close-btn" routerLink="/repositorios">✕</button>
+</div>
+
+<div class="detail-container" *ngIf="repositorio">
+
+  <h1>{{ repositorio.name }}</h1>
+
+  <p>{{ repositorio.description }}</p>
+
+  <p><strong>Language:</strong> {{ repositorio.language }}</p>
+
+  <p><strong>Stars:</strong> {{ repositorio.stars }}</p>
+
+
+  <p><strong>Created:</strong> {{ repositorio.createdAt }}</p>
+
+</div>

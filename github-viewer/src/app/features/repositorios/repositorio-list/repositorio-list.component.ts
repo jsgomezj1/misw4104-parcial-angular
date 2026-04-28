@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Repositorio } from '../repositorio';
 import { RepositorioService } from '../repositorio.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-repositorio-list',
   templateUrl: './repositorio-list.component.html',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   styleUrls: ['./repositorio-list.component.css']
 })
 export class RepositorioListComponent implements OnInit {

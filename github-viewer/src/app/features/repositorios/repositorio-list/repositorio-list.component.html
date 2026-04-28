@@ -6,7 +6,8 @@
   <div class="repo-grid">
 
     <div class="repo-card" *ngFor="let repo of repositorios">
-
+    <div class="poster-card" *ngIf="repo.name && repo.name.length > 0" [routerLink]="['/repositorio', repo.id]">
+      
       <h3>{{ repo.name }}</h3>
 
       <p>{{ repo.language }}</p>

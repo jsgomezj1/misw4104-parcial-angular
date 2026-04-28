@@ -3,12 +3,10 @@
   <h2>GitHub Viewer</h2>
 
   <div class="nav-tabs">
-    <button (click)="activeTab='usuarios'">Usuarios</button>
-    <button (click)="activeTab='repos'">Repositorios</button>
+    <a routerLink="/">Usuarios</a>
+    <a routerLink="/repositorios">Repositorios</a>
   </div>
 
 </nav>
 
-<app-usuario-list *ngIf="activeTab === 'usuarios'"></app-usuario-list>
-
-<app-repositorio-list *ngIf="activeTab === 'repos'"></app-repositorio-list>
+<router-outlet></router-outlet>
